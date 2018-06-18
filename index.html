@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html>
+<head>
+
+
+<style>
+.column{float: left;
+        width:33.33%;
+		padding=5px;
+}
+.row::after{content: "";
+            clear: both;
+			display: table;
+}
+</style>
+<title>Smart Farmer</title>
+</head>
+<body bgcolor="#57E964">
+<center> 
+<h3><B>MY FARM</B></h3><br>
+</center>
+<div class="row">
+<div class="column">
+<h5>Temperature and Humidity<h5>
+<button type="button" onclick="myFunction()"><img src="https://www.normans.co.uk/blog/wp-content/up
+loads/2014/05/Humidity.png" width="100" height="50"></button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Temperature can be displayed here";
+}
+</script>
+</div>
+<div class="column">
+
+<h5>  PH level<h5>
+<button type="button" onclick="myFunction1()"><img src="https://www.focusjunior.it
+/content/uploads/2018/05/Ph-scala.jpeg" width="100" height="50"></button>
+<p id="demo1"></p>
+
+<script>
+function myFunction1() {
+  document.getElementById("demo1").innerHTML = "PH value can be displayed here";
+}
+</script>
+
+</div>
+
+<div class="column">
+
+<h5>Water the crops<h5>
+<button type="button" width="80" height="40">PUMP ON</button><br><br>
+<div class="row">
+
+<button type="button" width="80" height="40">PUMP OFF</button>
+</div>
+
+</div>
+
+
+</div>
+<br><br><br>
+<div class="row">
+<center>
+<button type="button" width="100" height="50" onclick="location.href='crops.html'">Find suitable crop</button>
+</center>
+</div>
+
+</body>
+</html>
